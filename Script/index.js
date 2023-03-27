@@ -21,7 +21,19 @@ const changeText = () => {
     }
 }
 
+const updateImage = () => {
+    const image = document.querySelector("#shoppingCart");
+    image.setAttribute(
+        "src",
+        "images/cart.png"
+    );
+    image.setAttribute("alt", "shopping Cart");
+    image.setAttribute("width", 50);
+    image.setAttribute("height", 50);
+}
+
 buttonRef.addEventListener("click", alertUser, {once: true});
 buttonRef.addEventListener("click", changeBackgroundPink);
 buttonRef.addEventListener("click", changeText);
+buttonRef.addEventListener("click", updateImage);
 
